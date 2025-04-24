@@ -1,0 +1,188 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Slider Section */
+.slidershow-middle {
+  width: 100%;
+  height: auto;
+  min-height: 40vh;
+  overflow: hidden;
+  margin: 20px 0 30px;
+}
+
+.navigation {
+  position: absolute;
+  left: 50%;
+  margin: 10px 0;
+}
+
+.bar {
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+}
+
+input[name='r'] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: auto;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  width: 97vw;
+  min-height: 27vh;
+  height: auto;
+}
+
+/* Build Sections Container */
+.build-sections-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 60px;
+  background: linear-gradient(45deg, #1a1a1a, #2c3e50);
+  min-height: 80vh;
+}
+
+/* Section Styles */
+.build-section {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.prebuilt-side {
+  border: 2px solid #3498db;
+}
+
+.custom-side {
+  border: 2px solid #e74c3c;
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #a8a8a8;
+}
+
+/* PC Card Styles */
+.pc-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.pc-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.pc-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.price-tag {
+  position: absolute;
+  top: 20px;
+  right: -30px;
+  background: #e74c3c;
+  color: white;
+  padding: 5px 30px;
+  font-size: 0.9rem;
+}
+
+.pc-details {
+  padding: 20px;
+  color: white;
+}
+
+.pc-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+/* Specs List */
+.specs-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.specs-list li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #a8a8a8;
+}
+
+.specs-list i {
+  color: #3498db;
+}
+
+/* Action Button */
+.action-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .build-sections-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  
+  .build-section {
+    padding: 20px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}
